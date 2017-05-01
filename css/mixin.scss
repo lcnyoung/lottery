@@ -1,0 +1,33 @@
+@mixin circle($val){       //public style for circular div
+    border-radius: $val;
+    -o-border-radius: $val;
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+    -ms-border-radius: $val;
+}
+
+@mixin tran($val){               //public style for fliping vertical
+    -ms-transform:rotateX($val);
+    -moz-transform:rotateX($val);
+    -webkit-transform:rotateX($val);
+    -o-transform:rotateX($val);
+    transform:rotateX($val);
+}
+@mixin colorch($a,$b,$c){        //public style for color changing slowly
+    transition:$a $b $c;
+    -ms-transition:$a $b $c;
+    -o-transition:$a $b $c;
+    -webkit-transition:$a $b $c;
+    -moz-transition:$a $b $c;
+}
+@mixin shadow($a,$b,$c,$d,$e){
+    box-shadow: $a $b $c $d $e;
+    -ms-box-shadow: $a $b $c $d $e;
+    -o-box-shadow: $a $b $c $d $e;
+    -webkit-box-shadow: $a $b $c $d $e;
+    -moz-box-shadow: $a $b $c $d $e;
+}
+@mixin vision($width,$top,$bottom){
+    width: $width;
+    margin: $top auto $bottom auto;
+}
